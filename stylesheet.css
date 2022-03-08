@@ -28,13 +28,25 @@ nav{
     display: flex;
     flex: 1;
     text-align: right;
-    padding: 3% 6%;
+    padding: 1.5% 6%;
     justify-content: space-between;
     align-items: center;
     z-index: 999;
 }
 nav img{
-    width: 150px;
+    width: 25px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--w-color);
+    font-family: 'roboto';
+    font-size: 50px;
+}
+nav a.a{
+    position: relative;
+}
+nav a.aa{
+    display: none;
 }
 /* .nav-links{ */
 /* } */
@@ -88,7 +100,13 @@ nav.sticky{
     z-index: 999;
     background-color: var(--o-color);
     /* box-shadow: 0px 1px 10px rgb(165, 165, 165); */
-    /* transition: opacity 0.5s; */
+    transition: background 0.3s;
+}
+nav.sticky a.a{
+    display: none;
+}
+nav.sticky a.aa{
+    display: block;
 }
 nav.sticky ul li::after{
     content: '';
